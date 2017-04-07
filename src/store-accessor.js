@@ -1,4 +1,4 @@
-export default function(key) {
+modules.export = function(key) {
     return {
         get() {
             return key.split('.').reduce((pValue, cValue) => {
