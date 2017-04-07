@@ -1,4 +1,4 @@
-import StoreAccessor from './store-accessor';
+const StoreAccessor = require('./store-accessor');
 
 function plugin(Vue) {
 
@@ -72,4 +72,4 @@ if (typeof window !== 'undefined' && window.Vue) {
     window.Vue.use(plugin);
 }
 
-export default plugin;
+module.exports = plugin;
